@@ -4,6 +4,60 @@
 /* Element Selectors */
 html, body {
     margin: 0;
+    padding: 0;
     height: 100%;
     font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: green url(https://assets.codepen.io/6060109/ZigZag.png) round;
+    /* background-size: cover; */
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 27px;
+    color: #2F463D;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-top: 0;
+    color: #828282;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+}
+
+/* Class Selectors */
+.card {
+    margin: 71px 24px;
+    width: 90%;
+    min-width: 327px;
+    height: 700px;
+    background: #fff;
+    box-shadow: 0px 40px 40px -20px #3C7B61;
+    border-radius: 5px;
+    position: relative;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 48px 35px 10px 35px;
+}
+
+/* ID Selectors */
+#close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+#confirmation {
+    padding-bottom: 12px;
 }
