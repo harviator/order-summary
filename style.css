@@ -1,5 +1,6 @@
 /* Font */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Ubuntu&display=swap');
 
 /* Element Selectors */
 html, body {
@@ -22,14 +23,6 @@ h2 {
     margin-bottom: 10px;
 }
 
-p {
-    margin-top: 0;
-    color: #828282;
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 14px;
-    line-height: 26px;
-}
-
 /* Class Selectors */
 .card {
     margin: 71px 24px;
@@ -49,6 +42,54 @@ p {
     align-items: center;
     text-align: center;
     padding: 48px 35px 10px 35px;
+}
+
+.main-container > p {
+    margin-top: 0;
+    color: #828282;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+}
+
+.order-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: #F0FFF5;
+    border-radius: 5px;
+    margin-top: 21px;
+}
+
+.order-details{
+    width: 50%;
+    text-align: left;
+    padding-left: 15px;
+}
+
+.order-details > p:first-of-type {
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 17px;
+    color: #2F463D;
+    margin: 0;
+    padding-bottom: 4px;
+}
+
+.order-details > p:last-of-type {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #7A8FA5;
+    margin: 0;
+}
+
+.order-container > a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 16px;
+    color: #467A66;
 }
 
 /* ID Selectors */
