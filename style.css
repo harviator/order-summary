@@ -12,6 +12,9 @@ html, body {
 
 body {
     background: #46A67E url(https://assets.codepen.io/6060109/ZigZag.png) round;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 h2 {
@@ -48,7 +51,7 @@ button:hover {
 /* Class Selectors */
 .card {
     width: 90%;
-    margin: 71px auto;
+    margin: 71px 0;
     width: 327px;
     height: 567px;
     background: #fff;
@@ -167,11 +170,7 @@ button:hover {
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
     /* Element Selectors */
-    body {
-        display: flex;
-        justify-content: space-around;
-    }
-
+    
     h2 {
         font-weight: 600;
         font-size: 28px;
@@ -187,6 +186,19 @@ button:hover {
 
     .card-1, .card-3 {
         display: block;
+        height: 648px;
+    }
+
+    .card-1 {
+        margin-right: -20px;
+    }
+
+    .card-2 {
+        z-index: 2;
+    }
+
+    .card-3 {
+        margin-left: -20px;
     }
 
     .card-1 h2, .card-3 h2{
@@ -258,7 +270,6 @@ button:hover {
     #confirmation {
         width: 150px;
         height: 150px;
-        /* margin-top: 15px; */
     }
 
     #order-image {
