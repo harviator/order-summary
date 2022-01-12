@@ -11,8 +11,7 @@ html, body {
 }
 
 body {
-    background: green url(https://assets.codepen.io/6060109/ZigZag.png) round;
-    /* background-size: cover; */
+    background: #46A67E url(https://assets.codepen.io/6060109/ZigZag.png) round;
 }
 
 h2 {
@@ -36,6 +35,7 @@ button {
     line-height: 18px;
     color: #FFFFFF;
     padding: 15px 0;
+    margin-bottom: 45px;
     transition: 0.3s ease all;
 }
 
@@ -47,14 +47,18 @@ button:hover {
 
 /* Class Selectors */
 .card {
-    margin: 71px 24px;
     width: 90%;
-    min-width: 327px;
-    height: 600px;
+    margin: 71px auto;
+    width: 327px;
+    height: 567px;
     background: #fff;
     box-shadow: 0px 40px 40px -20px #3C7B61;
     border-radius: 5px;
     position: relative;
+}
+
+.card-1, .card-3 {
+    display: none;
 }
 
 .main-container {
@@ -114,6 +118,39 @@ button:hover {
     color: #467A66;
 }
 
+.grey-button {
+    background: #BDBDBD;
+    box-shadow: 0px 20px 20px rgba(167, 167, 167, 0.2);
+    color: #FFFFFF;
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 85%;
+}
+
+.dots {
+    width: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 7%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: #E0E0E0;
+}
+
+.dot2 {
+    background-color: #67BD99;
+}
+
 /* ID Selectors */
 #close-btn {
     position: absolute;
@@ -123,4 +160,112 @@ button:hover {
 
 #confirmation {
     padding-bottom: 12px;
+}
+
+/* Media Queries */
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    /* Element Selectors */
+    body {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    h2 {
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 34px;
+        color: #2F463D;
+    }
+
+    /* Class Selectors */
+    .card {
+        width: 450px;
+        height: 690px;
+    }
+
+    .card-1, .card-3 {
+        display: block;
+    }
+
+    .card-1 h2, .card-3 h2{
+        margin-bottom: 35px;
+    }
+
+    .card-2 h2{
+        margin-bottom: 25px;
+    }
+
+    .main-container > p {
+        color: #828282;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .card-1 .main-container > p, .card-3 .main-container > p {
+        margin-bottom: 80px;
+    }
+
+    .card-2 .main-container > p {
+        margin-bottom: 9px;
+    }
+
+    .order-details{
+        padding-left: 20px;
+    }
+    
+    .order-details > p:first-of-type {
+        font-weight: 800;
+        font-size: 16px;
+        line-height: 20px;
+        color: #2F463D;
+        margin: 0;
+        padding-bottom: 7px;
+    }
+    
+    .order-details > p:last-of-type {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        color: #7A8FA5;
+        margin: 0;
+    }
+    
+    .order-container > a {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 17px;
+        padding-left: 20px;
+        color: #467A66;
+    }
+
+    .card-1 .dot1, .card-3 .dot3 {
+        background-color: #67BD99;
+    }
+
+    .card-1 .dot2, .card-3 .dot2 {
+        background-color: #E0E0E0;
+    }
+
+    /* ID Selectors */
+    #choose {
+        margin-bottom: 46.74px;
+    }
+
+    #confirmation {
+        width: 150px;
+        height: 150px;
+        /* margin-top: 15px; */
+    }
+
+    #order-image {
+        height: 90px;
+    }
+
+    #process {
+        margin-bottom: 7px;
+    }
 }
