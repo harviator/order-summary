@@ -60,7 +60,7 @@ button:hover {
     position: relative;
 }
 
-.card-1, .card-3 {
+.dish, .process {
     display: none;
 }
 
@@ -184,28 +184,28 @@ button:hover {
         height: 690px;
     }
 
-    .card-1, .card-3 {
+    .dish, .process {
         display: block;
         height: 648px;
     }
 
-    .card-1 {
+    .dish {
         margin-right: -20px;
     }
 
-    .card-2 {
+    .confirmation {
         z-index: 2;
     }
 
-    .card-3 {
+    .process {
         margin-left: -20px;
     }
 
-    .card-1 h2, .card-3 h2{
+    .dish h2, .process h2{
         margin-bottom: 35px;
     }
 
-    .card-2 h2{
+    .confirmation h2{
         margin-bottom: 25px;
     }
 
@@ -216,11 +216,11 @@ button:hover {
         line-height: 26px;
     }
 
-    .card-1 .main-container > p, .card-3 .main-container > p {
+    .dish .main-container > p, .process .main-container > p {
         margin-bottom: 80px;
     }
 
-    .card-2 .main-container > p {
+    .confirmation .main-container > p {
         margin-bottom: 9px;
     }
 
@@ -254,11 +254,11 @@ button:hover {
         color: #467A66;
     }
 
-    .card-1 .dot1, .card-3 .dot3 {
+    .dish .dot1, .process .dot3 {
         background-color: #67BD99;
     }
 
-    .card-1 .dot2, .card-3 .dot2 {
+    .dish .dot2, .process .dot2 {
         background-color: #E0E0E0;
     }
 
