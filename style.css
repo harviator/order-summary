@@ -64,6 +64,12 @@ button:hover {
     display: none;
 }
 
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
 .main-container {
     display: flex;
     flex-direction: column;
@@ -155,12 +161,6 @@ button:hover {
 }
 
 /* ID Selectors */
-#close-btn {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-}
-
 #confirmation {
     padding-bottom: 12px;
 }
