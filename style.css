@@ -127,7 +127,7 @@ button:hover {
     color: #467A66;
 }
 
-.grey-button {
+.inactive-btn {
     background: #BDBDBD;
     box-shadow: 0px 20px 20px rgba(167, 167, 167, 0.2);
     color: #FFFFFF;
