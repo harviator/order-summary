@@ -156,7 +156,7 @@ button:hover {
     background-color: #E0E0E0;
 }
 
-.dot2 {
+.dot-green {
     background-color: #67BD99;
 }
 
@@ -254,13 +254,13 @@ button:hover {
         color: #467A66;
     }
 
-    .dish .dot1, .process .dot3 {
+    /* .dish .dot1, .process .dot3 {
         background-color: #67BD99;
-    }
+    } */
 
-    .dish .dot2, .process .dot2 {
+    /* .dish .dot2, .process .dot2 {
         background-color: #E0E0E0;
-    }
+    } */
 
     /* ID Selectors */
     #choose {
